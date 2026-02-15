@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - HomeGadgets</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-section {
+            padding: 8rem 5%;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content {
+            margin-top: 3rem;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .feature-box {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .feature-box h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">HomeGadgets<span style="color:var(--primary);">.</span></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <button class="btn-primary" onclick="window.location.href='products.html'">Shop Now</button>
+    </nav>
+
+    <div class="about-section">
+        <h1>Redefining Smart Living</h1>
+        <div class="about-content">
+            <p>At HomeGadgets, we believe that the future of living is smart, seamless, and intuitive. We curate only
+                the most "Supiri" (Premium) gadgets that transform ordinary houses into efficiently automated homes.</p>
+            <p>Whether you're looking for high-fidelity audio, advanced security, or climate control, our selection is
+                vetted for quality and performance.</p>
+
+            <div class="features-grid">
+                <div class="feature-box">
+                    <h3>Premium Quality</h3>
+                    <p>Only the best-rated gadgets make it to our catalog.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Expert Support</h3>
+                    <p>We guide you to choose the right tech for your needs.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Future Proof</h3>
+                    <p>Staying ahead with the latest in AI and IoT trends.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 HomeGadgets. Affiliate Disclosure: We earn commissions from purchases made through our links.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

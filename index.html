@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeGadgets - Premium Smart Living</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Placeholder for icons -->
+    <style>
+        /* Inline quick fixes for demo */
+        .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1558002038-1091a16600a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+            opacity: 0.4;
+            z-index: 0;
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">HomeGadgets<span style="color:var(--primary);">.</span></a>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <button class="btn-primary" onclick="window.location.href='products.html'">Shop Now</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-image"></div>
+        <div class="hero-bg-glow"></div>
+        <div class="hero-content">
+            <h1>Upgrade Your Home <br> <span style="color:var(--primary);">Upgrade Your Life</span></h1>
+            <p>Discover the latest in smart home technology. Premium gadgets for a futuristic lifestyle.</p>
+            <a href="products.html" class="btn-primary" style="display:inline-block; margin-top:1rem;">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products-section">
+        <div class="section-title">
+            <h2>Trending Gadgets</h2>
+            <p>Hand-picked for quality and performance</p>
+        </div>
+        
+        <div class="grid-container">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1543512214-318c77a790d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Smart Speaker">
+                </div>
+                <div class="product-info">
+                    <h3>Echo Studio X1</h3>
+                    <p>Immersive 3D audio with built-in smart assistant.</p>
+                    <span class="price">$199.99</span>
+                    <button class="btn-buy" onclick="window.open('https://amazon.com', '_blank')">Buy on Amazon</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Smart Vacuum">
+                </div>
+                <div class="product-info">
+                    <h3>RoboClean Ultra</h3>
+                    <p>AI-powered cleaning with obstacle avoidance technology.</p>
+                    <span class="price">$450.00</span>
+                    <button class="btn-buy" onclick="window.open('https://amazon.com', '_blank')">Buy on Amazon</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Security Camera">
+                </div>
+                <div class="product-info">
+                    <h3>SecureView 360</h3>
+                    <p>2K resolution indoor/outdoor camera with night vision.</p>
+                    <span class="price">$89.99</span>
+                    <button class="btn-buy" onclick="window.open('https://amazon.com', '_blank')">Buy on Amazon</button>
+                </div>
+            </div>
+
+             <!-- Product 4 -->
+             <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Smart Light">
+                </div>
+                <div class="product-info">
+                    <h3>Lumina Smart Bulb</h3>
+                    <p>16 Million colors, voice control, energy saving LED.</p>
+                    <span class="price">$24.99</span>
+                    <button class="btn-buy" onclick="window.open('https://amazon.com', '_blank')">Buy on Amazon</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 HomeGadgets. Affiliate Disclosure: We earn commissions from purchases made through our links.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
